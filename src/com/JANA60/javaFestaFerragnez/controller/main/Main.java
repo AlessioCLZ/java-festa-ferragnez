@@ -22,7 +22,6 @@ public class Main
 				"Rachel Zeilic"};
 		
 		String name, repeat;
-		boolean invited=false;
 		
 		
 		Scanner keyboard= new Scanner (System.in);
@@ -30,6 +29,8 @@ public class Main
 		do
 		{
 		
+			boolean invited=false;
+			
 			System.out.println("Welcome to Ferragnez' Mansion. \nPlease write your name so I can check if you have the permission to get in.");
 			
 			name=keyboard.nextLine();
@@ -73,6 +74,8 @@ public class Main
 			
 		
 		}while(repeat.equalsIgnoreCase("yes"));
+		
+		System.out.println("Thank you, bye!");
 		
 		
 		keyboard.close();
